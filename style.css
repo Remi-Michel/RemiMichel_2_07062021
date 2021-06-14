@@ -1,4 +1,13 @@
+p {
+    font-family: Raleway, "Arial Black", Arial, sans-serif;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(raleway/Raleway-Black.ttf);
+}
 h1
 {
     color: #0065FC;
 }
+
+
