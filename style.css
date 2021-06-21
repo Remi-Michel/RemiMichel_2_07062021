@@ -5,9 +5,12 @@ html {
     font-family: "Raleway";
     src: url(raleway/Raleway-Black.ttf);
 }
-h1
+div
 {
     color: #0065FC;
+}
+ul {
+    list-style-type: none;
 }
 
 
