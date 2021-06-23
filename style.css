@@ -12,5 +12,9 @@ div
 ul {
     list-style-type: none;
 }
-
-
+.fa-star {
+    color: blue;
+}
+p span {
+    font-weight: bold;
+}
