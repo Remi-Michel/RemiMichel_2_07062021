@@ -3,18 +3,37 @@ html {
 }
 @font-face {
     font-family: "Raleway";
-    src: url(raleway/Raleway-Black.ttf);
+    src: url(raleway/Raleway-Regular.ttf);
 }
-div
+.filtres
 {
     color: #0065FC;
 }
-ul {
+.topnav ul {
+    display: flex;
+    flex-direction: row;
+    float: right; 
+    justify-content: space-evenly;
     list-style-type: none;
 }
 .fa-star {
-    color: blue;
+    color: #0065FC;
+}
+
+.grey {
+    color:#F2F2F2;
 }
 p span {
     font-weight: bold;
+}
+h1 h2 h3 {
+    font-weight: bold;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+}
+.fa-info-circle {
+    color: white;
+    background-color: #0065FC;
 }
