@@ -12,17 +12,16 @@ body {
 {
     color: #0065FC;
 }
-.header {
-    object-position: left top;
-    width: 50px;
-    height: 50px;
-}
- header nav a {
+.navflex {
     display: flex;
     flex-direction: row;
-    float: right; 
-    justify-content: space-around;
-    border-spacing: 100px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    margin-top: 10px;
+}
+.navflex a {
+    margin: 20px;
 }
 .fa-star {
     color: #0065FC;
@@ -42,35 +41,48 @@ h1 h2 h3 {
 .aside {
     display: flex;
     flex-direction: column;
+    float: right;
+    background-color:#F2F2F2
+
 }
 .fa-info {
     color: #0065FC;
-    border: 1px solid gray;
+    border: 1px solid DEEBFF;
     border-radius: 20px;
+    border-width: 10px;
+    background-color: DEEBFF
 }
 .fa-money-bill-wave {
-    border: 1px solid black;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
+    border-width: 10px;
+    border-spacing: auto;
+    background-color: #DEEBFF;
 }
 .fa-child {
-    border: 1px solid black;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
+    border-width: 10px;
+    background-color: #DEEBFF;
 }
 .fa-heart {
-    border: 1px solid black;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
+    border-width: 10px;
+    background-color: #DEEBFF;
 }
 .fa-dog {
-    border: 1px solid black;
+    border: 1px solid #DEEBFF;
     border-radius: 20px;
+    border-width: 10px;
+    background-color: #DEEBFF;
 }
 .propos {
     display: flex;
     flex-direction: column;
 }
-.hébergements {
-    display: flex;
-    flex-direction: column;
+.resultat {
+    display: grid;
     width: 150px;
     height: 150px;
     background-color:#F2F2F2;
@@ -82,4 +94,58 @@ h1 h2 h3 {
 button {
     background-color:#0065FC;
     color: white;
+}
+.logo {
+    width: 150px;
+    height: auto;
+}
+.filtres {
+    display: flex;
+}
+.filtres p {
+    border: solid#DEEBFF;
+    border-radius: 50pc;
+    margin: 15px;
+}
+img {
+    width: 300px;
+    height: auto;
+}
+::placeholder {
+    color: black;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    color: black;
+}
+.bloc_footer {
+    margin-left: 0pc;
+    margin-right: 200px;
+}
+.bloc_footer a {
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.element {
+    display: flex;
+    flex-wrap: wrap;
+}
+.element_1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.element_2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.element_3 {
+    grid-column: 1/3;
+    grid-row: 2/3;
 }
