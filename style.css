@@ -16,12 +16,26 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 0px;
-    right: 50px;
-    margin-top: 10px;
+    top: 0rem;
+    right: 2rem;
 }
 .navflex a {
-    margin: 20px;
+    margin: 1.5rem;
+    padding: 2rem;
+}
+.navflex span {
+    color: #0065FC;
+}
+.link {
+    border-top: solid 0.2rem transparent;
+}
+.active,
+.link:hover {
+    color: #0065FC;
+    border-top: solid 0.2rem #0065FC;
+}
+.a:active {
+    border-top: solid 0.2rem #0065FC;
 }
 .fa-star {
     color: #0065FC;
@@ -38,12 +52,22 @@ p span {
 h1 h2 h3 {
     font-weight: bold;
 }
+form {
+    display: flex;
+}
+.fa-map-marker-alt {
+    border: solid 0.2rem #F2F2F2;
+    background-color: #F2F2F2;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    padding: 0.8rem;
+}
 .fa-info {
     color: #0065FC;
-    border: 1px solid DEEBFF;
-    border-radius: 20px;
+    border: 1px solid #DEEBFF;
+    border-radius: 10px;
     border-width: 10px;
-    background-color: DEEBFF
+    background-color: #DEEBFF
 }
 .fa-money-bill-wave {
     border: 1px solid #DEEBFF;
@@ -81,9 +105,21 @@ h1 h2 h3 {
 button {
     background-color:#0065FC;
     color: white;
+    border-color: #0065FC;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 .logo {
     width: 150px;
+    height: auto;
+}
+#hebergement img {
+    width: 15rem;
+    height: auto;
+    max-height: 9rem;
+}
+#activity img {
+    width: 15rem;
     height: auto;
 }
 .filtres {
@@ -92,11 +128,9 @@ button {
 .filtres p {
     border: solid#DEEBFF;
     border-radius: 50pc;
-    margin: 15px;
-}
-img {
-    width: 300px;
-    height: auto;
+    margin: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
 }
 ::placeholder {
     color: black;
@@ -110,11 +144,12 @@ footer {
 }
 .bloc_footer {
     margin-left: 0pc;
-    margin-right: 200px;
+    margin-right: 20rem;
 }
 .bloc_footer a {
     display: flex;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 a {
     text-decoration: none;
@@ -123,9 +158,30 @@ a {
 header {
     grid-area: header;
 }
-main {
-    grid-area: main;
-    background-color: red;
+#main {
+    display: grid;
+    grid-area: "main";
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 0.5rem;
+
+}
+#main a {
+    width: 20rem;
+    height: auto;
+}
+#main h2, #popular h2, #activity h2 {
+    grid-column: 1/-1;
+}
+#hebergement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "main aside";
+    column-gap: 2rem;
+    width: 30%;
+
 }
 aside {
     display: flex;
@@ -133,18 +189,77 @@ aside {
     background-color:#F2F2F2;
     grid-area: aside;
 }
+#popular {
+    display: grid;
+    grid-area: "popular";
+    border-radius: 0.5rem;
+}
 footer {
     grid-area: footer;
 }
+
 .container {
     display: grid;
-  grid-template-columns: auto
-  grid-template-rows: auto
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   grid-template-areas: 
     "header header header header"
     "main main . aside"
     "footer footer footer footer";
 }
+
 .flex {
     display: flex;
 }
+.grid {
+    display: grid;
+}
+.element {
+    border: solid;
+    border-color: white;
+    border-radius: 1rem;
+    background-color: white;
+}
+#activity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: activity;
+    text-align: left;
+
+}
+i .fas .fa-chart-line {
+    position: absolute;
+    color: blue;
+}
+#activity .activite_port {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}   
+#activity .activite_fort {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+#activity .activite_frioul {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#activity .activite_calanques {
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
+#activity .activite_dame {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+#activity .activite_parc {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+
+@media screen and {max-width: 1024px)
+.body
+    {
+       width: auto;
+    }
