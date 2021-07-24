@@ -20,7 +20,7 @@ body {
     right: 2rem;
 }
 .navflex a {
-    margin: 1.5rem;
+    /*margin: 1.5rem;*/
     padding: 2rem;
 }
 .navflex span {
@@ -64,10 +64,11 @@ form {
 }
 .fa-info {
     color: #0065FC;
-    border: 1px solid #DEEBFF;
-    border-radius: 10px;
-    border-width: 10px;
-    background-color: #DEEBFF
+    border: 0.1rem solid #DEEBFF;
+    padding: 1rem;
+    border-radius: 100%;
+    border-width: 0.5rem;
+    background-color: white;
 }
 .fa-money-bill-wave {
     border: 1px solid #DEEBFF;
@@ -106,8 +107,9 @@ button {
     background-color:#0065FC;
     color: white;
     border-color: #0065FC;
-    border-top-right-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
 }
 .logo {
     width: 150px;
@@ -116,7 +118,9 @@ button {
 #hebergement img {
     width: 15rem;
     height: auto;
-    max-height: 9rem;
+    max-height: 8rem;
+    padding: 0.5rem;
+    margin-top: 0.2rem;
 }
 #activity img {
     width: 15rem;
@@ -131,6 +135,13 @@ button {
     margin: 1rem;
     padding-right: 1rem;
     justify-content: center;
+}
+.filtres .fas {
+    margin-right: 0.8rem;
+}
+.filtres p:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
 ::placeholder {
     color: black;
@@ -163,25 +174,39 @@ header {
     grid-area: "main";
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    padding: 1rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
     text-align: left;
     border-radius: 0.5rem;
+    width: 60rem;
+    height: 41rem;
 
 }
-#main a {
-    width: 20rem;
-    height: auto;
+#main .element {
+    width: 17rem;
+    height: 17rem;
+}
+#popular .element {
+    width: 17rem;
+    height: 15rem;
+    row-gap: 1rem;
+    padding-right: 8rem;
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
 }
 #main h2, #popular h2, #activity h2 {
     grid-column: 1/-1;
 }
 #hebergement {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: "main aside";
     column-gap: 2rem;
-    width: 30%;
-
+    width: 42rem
 }
 aside {
     display: flex;
@@ -189,10 +214,16 @@ aside {
     background-color:#F2F2F2;
     grid-area: aside;
 }
+aside #fas {
+    position: absolute;
+    float: right;
+}
 #popular {
     display: grid;
     grid-area: "popular";
     border-radius: 0.5rem;
+    width: 28rem;
+    height: 60rem;
 }
 footer {
     grid-area: footer;
@@ -205,6 +236,7 @@ footer {
   grid-template-areas: 
     "header header header header"
     "main main . aside"
+    "activity activity activity activity"
     "footer footer footer footer";
 }
 
@@ -225,34 +257,31 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     grid-area: activity;
     text-align: left;
-
+    padding: 1rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
-i .fas .fa-chart-line {
-    position: absolute;
-    color: blue;
-}
-#activity .activite_port {
+#activity #activite_port {
     grid-column: 1/2;
     grid-row: 2/4;
 }   
-#activity .activite_fort {
+#activity #activite_fort {
     grid-column: 2/3;
     grid-row: 2/3;
-    
 }
-#activity .activite_frioul {
+#activity #activite_frioul {
     grid-column: 2/3;
     grid-row: 3/4;
 }
-#activity .activite_calanques {
+#activity #activite_calanques {
     grid-column: 3/4;
     grid-row: 2/4;
 }
-#activity .activite_dame {
+#activity #activite_dame {
     grid-column: 4/5;
     grid-row: 2/3;
 }
-#activity .activite_parc {
+#activity #activite_parc {
     grid-column: 4/5;
     grid-row: 3/4;
 }
