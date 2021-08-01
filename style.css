@@ -12,19 +12,20 @@ body {
 {
     color: #0065FC;
 }
-.navflex {
+#navflex {
     display: flex;
     flex-direction: row;
     position: absolute;
     top: 0rem;
     right: 2rem;
 }
-.navflex a {
+#navflex a {
     /*margin: 1.5rem;*/
     padding: 2rem;
 }
-.navflex span {
+#navflex span {
     color: #0065FC;
+    font-weight: bold;
 }
 .link {
     border-top: solid 0.2rem transparent;
@@ -49,7 +50,10 @@ body {
 p span {
     font-weight: bold;
 }
-h1 h2 h3 {
+h1 {
+    font-weight: bold;
+}
+h2 h3 {
     font-weight: bold;
 }
 form {
@@ -107,9 +111,12 @@ form {
 button {
     background-color:#0065FC;
     color: white;
+    font-weight: bold;
     border-color: #0065FC;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     cursor: pointer;
 }
 .logo {
@@ -131,20 +138,21 @@ button {
     padding: 0.5rem;
     margin-top: 0.2rem;
 }
-.filtres {
+#filtres {
     display: flex;
+    padding-top: 1rem;
 }
-.filtres p {
-    border: solid#DEEBFF;
+#filtres p {
+    border: solid#F2F2F2;
     border-radius: 50pc;
     margin: 1rem;
     padding-right: 1rem;
     justify-content: center;
 }
-.filtres .fas {
+#filtres .fas {
     margin-right: 0.8rem;
 }
-.filtres p:hover {
+#filtres p:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 }
@@ -154,13 +162,9 @@ button {
 }
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     background-color: #F2F2F2;
     color: black;
-}
-.bloc_footer {
-    margin-left: 0pc;
-    margin-right: 20rem;
 }
 .bloc_footer a {
     display: flex;
@@ -179,32 +183,37 @@ header {
     grid-area: "main";
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
-    row-gap: 1rem;
+    row-gap: 2rem;
     column-gap: 1rem;
     padding-left: 1rem;
-    padding-top: 1rem;
+    padding-top: 0rem;
     padding-bottom: 2rem;
-    text-align: left;
     border-radius: 0.5rem;
-    width: 58rem;
-    height: 43rem;
-
+    box-shadow: 1rem 1rem 2rem #F2F2F2;
+}
+#hebergement h2 {
+    padding-top: 1rem;
 }
 #main .element {
     width: 15rem;
     height: auto;
+    line-height: 0.5rem;
+    text-align: left;
+}
+#main #description {
+    padding-left: 1rem;
 }
 #popular .element {
-    width: 23rem;
-    height: 10rem;
-    row-gap: 0rem;
-    padding-right: 1rem;
+    padding-right: 9rem;
+    line-height: 0.5rem;
+    width: 10rem;
+    height: auto;
 }
 #popular a {
     display: flex;
 }
 #popular img {
-    width:10rem;;
+    width:10rem;
     height: auto;
     max-height: 10rem;
     min-height: 10rem;
@@ -216,6 +225,12 @@ header {
 }
 #popular .text {
     padding-left: 1rem;
+    position: relative;
+}
+#popular .fas {
+    position: relative;
+    float: right;
+    padding-right: 1rem;
 }
 #main h2, #popular h2, #activity h2 {
     grid-column: 1/-1;
@@ -225,8 +240,6 @@ header {
     grid-template-columns: 3fr 1fr;
     grid-template-areas: "main aside";
     column-gap: 2rem;
-    width: 42rem;
-    
 }
 aside {
     display: flex;
@@ -234,17 +247,14 @@ aside {
     background-color:#F2F2F2;
     grid-area: aside;
 }
-aside #fas {
-    position: absolute;
-    float: right;
-}
 #popular {
     display: grid;
     grid-area: "popular";
     border-radius: 0.5rem;
-    width: 28rem;
-    height: 45rem;
-    padding-top: 1rem;
+    /*width: 28rem;*/
+    /*height: 45rem;*/
+    padding-top: 0rem;
+    padding-left: 2rem;
 }
 footer {
     grid-area: footer;
@@ -289,6 +299,9 @@ footer {
     border-top-right-radius: 1.5rem;
     object-fit: cover;
 }
+#activity h3 {
+    box-shadow: 0rem 0.5rem 0.5rem #F2F2F2;
+}
 #activity #activite_port {
     grid-column: 1/2;
     grid-row: 2/4;
@@ -315,8 +328,8 @@ footer {
 }
 
 
-@media screen and {max-width: 1024px)
-.body
-    {
-       width: auto;
+@media screen and (max-width: 1024px) {
+    body {
+    width: auto;
     }
+}
