@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf_8"/>
-        <link href="style.css" rel="stylesheet" />  
+        <meta charset="utf-8"/>
+        <title>Reservia</title>
+        <link href="style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <script src="https://kit.fontawesome.com/b7f0506d24.js" crossorigin="anonymous"></script>
     </head>
 
@@ -10,9 +13,9 @@
         <header>
             <img class="logo" src="images/Reservia@3x.png" alt="logo" title="logo">
             <nav id="navflex">
-                <a class="link active"href="#hebergement">Hébergements</a> 
-                <a class="link"href="#activity">Activités</a>
-                <a class="link"href="#"><span id="blue">S'inscrire</span></a>
+                <a class="link active" href="#hebergement">Hébergements</a> 
+                <a class="link" href="#activity">Activités</a>
+                <a class="link" href="#"><span id="blue">S'inscrire</span></a>
             </nav>
         </header>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -38,7 +41,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="fenêtre+lit superposé" title="fenêtre+lit superposé">
-                        <div id="description">
+                        <div class="text">
                         <h3>Auberge de la cannebière</h3>
                         <p>Nuit à partir de <span>25€</span></p>
                         <i class="fas fa-star"></i>
@@ -52,7 +55,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="lit" title="lit">
-                        <div id="description">
+                        <div class="text">
                         <h3>Hôtel du Port</h3>
                         <p>Nuit à partir de <span>52€</span></p>
                         <i class="fas fa-star"></i>
@@ -66,7 +69,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/reisetopia-B8WIgxA_PFU-unsplash.jpg"  alt="lit+lampe" title="lit+lampe">
-                        <div id="description">
+                        <div class="text">
                         <h3>Hôtel Les Mouettes</h3>
                         <p>Nuit à partir de <span>76€</span></p>
                         <i class="fas fa-star"></i>
@@ -80,7 +83,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="lit+tableau" title="lit+tableau">
-                        <div id="description">
+                        <div class="text">
                         <h3>Hôtel de la Mer</h3>
                         <p>Nuit à partir de <span>46€</span></p>
                         <i class="fas fa-star"></i>
@@ -94,7 +97,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="lits superposés" title="lits superposés">
-                        <div id="description">
+                        <div class="text">
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de <span>23€</span></p>
                         <i class="fas fa-star"></i>
@@ -108,7 +111,7 @@
                 <div class="element">
                     <a href="#">
                         <img src="images/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="lit+fenêtre" title="lit+fenêtre">
-                        <div id="description">
+                        <div class="text">
                         <h3>Hôtel Chez Amina</h3>
                         <p>Nuit à partir de <span>96€</span></p>
                         <i class="fas fa-star"></i>
@@ -180,28 +183,32 @@
                     <a href="#">
                     <img src="images/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="fort" title="fort">
                     <h3>Fort de Pomègues</h3>
-                </a>
+                    </a>
                 </div>
                 <div id="activite_frioul">
                     <a href="#">
                     <img src="images/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="plage" title="plage">
                     <h3>Iles du Frioul</h3>
-                </a>
+                    </a>
                 </div>
                 <div id="activite_calanques">
                     <a href="#">
                     <img src="images/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="calanques" title="calanques">
                     <h3>Parc National des Calanques</h3>
+                    </a>
                 </div>
                 <div id="activite_dame">
+                    <a href="#">
                     <img src="images/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="église" title="église">
                     <h3>Notre-Dame-de-la-Garde</h3>
+                    </a>
                 </div>
                 <div id="activite_parc">
+                    <a href="#">
                     <img src="images/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="monument" title="monument">
                     <h3>Parc Longchamp</h3>
+                </a>
                 </div>
-            </div>
         </section>
     <footer>
             <div class="bloc_footer"><h2>A propos</h2>
@@ -223,8 +230,6 @@
                     <a href="#">Nous contacter</a> 
                 </nav>
             </div>
-            </div>
-        </section>
     </footer>
     </body>
 </html>

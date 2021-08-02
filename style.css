@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html {
-    font-family: Raleway, "Arial Black", Arial, sans-serif;
+    font-family: "Raleway", "Arial Black", Arial, sans-serif;
+    font-weight: 400;
 }
-@font-face {
-    font-family: "Raleway";
-    src: url(raleway/Raleway-Regular.ttf);
-}
+
 body {
     background-color: white;
 }
@@ -50,10 +49,13 @@ body {
 p span {
     font-weight: bold;
 }
-h1 {
+h1 h2 h3 {
     font-weight: bold;
 }
-h2 h3 {
+h3 {
+    margin: 0rem;
+}
+#filtres {
     font-weight: bold;
 }
 form {
@@ -165,6 +167,7 @@ footer {
     justify-content:space-between;
     background-color: #F2F2F2;
     color: black;
+    flex-shrink: 0.8;
 }
 .bloc_footer a {
     display: flex;
@@ -197,28 +200,24 @@ header {
 #main .element {
     width: 15rem;
     height: auto;
-    line-height: 0.5rem;
     text-align: left;
 }
-#main #description {
+#main .text {
     padding-left: 1rem;
 }
 #popular .element {
-    padding-right: 9rem;
-    line-height: 0.5rem;
-    width: 10rem;
-    height: auto;
+    max-height: 10rem;
 }
 #popular a {
     display: flex;
 }
 #popular img {
-    width:10rem;
+    width: 10rem;
     height: auto;
     max-height: 10rem;
     min-height: 10rem;
     min-width: 10rem;
-    max-width: 10rem;
+    /*max-width: 10rem;*/
     object-fit: cover;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -255,6 +254,7 @@ aside {
     /*height: 45rem;*/
     padding-top: 0rem;
     padding-left: 2rem;
+    padding-right: 2rem;
 }
 footer {
     grid-area: footer;
@@ -266,7 +266,7 @@ footer {
   grid-template-rows: auto;
   grid-template-areas: 
     "header header header header"
-    "main main . aside"
+    "main main . popular"
     "activity activity activity activity"
     "footer footer footer footer";
 }
