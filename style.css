@@ -307,7 +307,7 @@ footer {
     padding: 1rem;
     row-gap: 1rem;
     column-gap: 1rem;
-    padding-bottom: 0rem;
+    padding-bottom: 8rem;
 }
 #activity h2 {
     padding-left: 0.8rem;
@@ -323,13 +323,12 @@ footer {
     object-fit: cover;
     overflow: hidden;
 }
-.shadow {
-    box-shadow: 1rem 0.5rem 0.5rem #F2F2F2;
-    border-radius: 0.5rem;
-}
 #activity h3 {
     padding-left: 1.5rem;
     padding-bottom: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #F2F2F2;
+    border-radius: 0.5rem;
+    max-width: 19rem;
 }
 #activity #activite_port {
     grid-column: 1/2;
