@@ -363,27 +363,83 @@ footer {
     align-self: flex-end;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 740px) {
     body {
         width: 100%;
     }
-    .filtres p {
+    h1 {
+        font-size: 1.7rem;
+    }
+    h1, h2 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    .navflex {
+        width: 100%;
+    }
+    form {
+        padding-left: 1rem;
+    }
+    #filtres {
+        display: inline-block;
+    }
+    #filtres p {
+        padding-left: 0rem;
         width: 100%;
     }
     #hebergement {
-        grid-template-areas: 
-        "popular"
+        grid-template-areas: "aside" 
         "main";
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
     }
     #main {
-        grid-template-columns: repeat (1fr);
+        grid-template-columns: repeat(1,1fr);
+        background-color: white;
     }
     #activity {
-        grid-template-columns: repeat (1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     footer {
         flex-direction: column;
     }
+    #activity #activite_port {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        max-height: 11rem;
+        max-width: auto;
+    }   
+    #activity #activite_fort {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        max-height: 11rem;
+        max-width: auto;
+    }
+    #activity #activite_frioul {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        max-height: 11rem;
+        max-width: auto;
+    }
+    #activity #activite_calanques {
+        grid-column: 1/2;
+        grid-row: 5/6;
+        max-height: 11rem;
+        max-width: auto;
+    }
+    #activity #activite_dame {
+        grid-column: 1/2;
+        grid-row: 6/7;
+        max-height: 11rem;
+        max-width: auto;
+    }
+    #activity #activite_parc {
+        grid-column: 1/2;
+        grid-row: 7/8;
+        max-height: 11rem;
+        max-width: auto;
+    }
+
 }
 
 @media screen and (min-width:700px) and (max-width: 1024px) {
@@ -393,13 +449,5 @@ footer {
 }
 
 
-@media screen and (max-width: 1024px) {
-    body {
-    width: auto;
-    }
-    html {
-        font-size: 12px;
-    }
-}
 
 
