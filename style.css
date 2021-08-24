@@ -367,10 +367,19 @@ footer {
     body {
         width: 100%;
     }
+    header {
+        grid-template-areas:  
+        "logo navflex"
+        "navflex navflex" ;
+    }
     h1 {
         font-size: 1.7rem;
     }
     h1, h2 {
+        text-align: left;
+        padding-left: 1rem;
+    }
+    p {
         text-align: left;
         padding-left: 1rem;
     }
@@ -385,7 +394,6 @@ footer {
     }
     #filtres p {
         padding-left: 0rem;
-        width: 100%;
     }
     #hebergement {
         grid-template-areas: "aside" 
@@ -408,36 +416,44 @@ footer {
         grid-row: 2/3;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }   
     #activity #activite_fort {
         grid-column: 1/2;
         grid-row: 3/4;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }
     #activity #activite_frioul {
         grid-column: 1/2;
         grid-row: 4/5;
+        min-height: 11rem;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }
     #activity #activite_calanques {
         grid-column: 1/2;
         grid-row: 5/6;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }
     #activity #activite_dame {
         grid-column: 1/2;
         grid-row: 6/7;
+        min-height: 11rem;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }
     #activity #activite_parc {
         grid-column: 1/2;
         grid-row: 7/8;
         max-height: 11rem;
         max-width: auto;
+        padding-bottom: 2rem;
     }
 
 }
