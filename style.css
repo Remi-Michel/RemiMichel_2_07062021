@@ -19,7 +19,6 @@ body {
     right: 2rem;
 }
 #navflex a {
-    /*margin: 1.5rem;*/
     padding: 2rem;
 }
 #navflex span {
@@ -366,25 +365,43 @@ footer {
 @media screen and (max-width: 740px) {
     body {
         width: 100%;
+        margin-left: 0rem;
+        margin-bottom: 0rem;
     }
-    header {
-        grid-template-areas:  
-        "logo navflex"
-        "navflex navflex" ;
+    .logo {
+        position: relative;
+        top: 0rem;
+        padding-left: 1rem;
     }
     h1 {
         font-size: 1.7rem;
+    }
+    h1 + p {
+        padding-left: 1rem;
     }
     h1, h2 {
         text-align: left;
         padding-left: 1rem;
     }
-    p {
+    #filtres + p {
         text-align: left;
         padding-left: 1rem;
     }
-    .navflex {
+    #navflex {
+        padding-left: 1rem;
+        position: relative;
         width: 100%;
+        top: 0rem;
+    }
+    #navflex span {
+        position: absolute;
+        top: -2.5rem;
+        border-bottom: hidden;
+    }
+    .link:hover {
+        color: #0065FC;
+        border-bottom: solid 0.2rem #0065FC;
+        border-top: hidden;
     }
     form {
         padding-left: 1rem;
@@ -393,6 +410,7 @@ footer {
         display: inline-block;
     }
     #filtres p {
+        display: inline-block;
         padding-left: 0rem;
     }
     #hebergement {
@@ -405,15 +423,24 @@ footer {
         grid-template-columns: repeat(1,1fr);
         background-color: white;
     }
-    #activity {
-        grid-template-columns: repeat(1,1fr);
+    #main img {
+        width: 100%;
     }
-    footer {
-        flex-direction: column;
+    #main .element {
+        width: 100%;
+    }
+    #activity {
+        display: block;
+        padding-bottom: 4rem;
+    }
+    #activity img {
+        max-width: 100%;
+        max-height: 8rem;
+    }
+    #activity h3 {
+        width: auto
     }
     #activity #activite_port {
-        grid-column: 1/2;
-        grid-row: 2/3;
         max-height: 11rem;
         max-width: auto;
         padding-bottom: 2rem;
@@ -454,6 +481,15 @@ footer {
         max-height: 11rem;
         max-width: auto;
         padding-bottom: 2rem;
+    }
+    footer {
+        flex-direction: column;
+    }
+    footer h2 {
+        padding-left: 0rem;
+    }
+    .bloc_footer {
+        padding-bottom: 0.5rem;
     }
 
 }
