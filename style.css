@@ -325,7 +325,7 @@ footer {
 #activity h3 {
     padding-left: 1.5rem;
     padding-bottom: 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem #F2F2F2;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #F2F2F2;
     border-radius: 0.5rem;
     max-width: 19rem;
 }
@@ -431,7 +431,7 @@ footer {
     }
     #main .element {
         width: 100%;
-        box-shadow: 0.5rem 0.5rem 0.5rem #F2F2F2;
+        box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #F2F2F2;
     }
     #activity {
         display: block;
@@ -444,7 +444,6 @@ footer {
     }
     #activity h3 {
         max-width: none;
-        width: 100%;
     }
     #activity #activite_port {
         max-height: 11rem;
@@ -504,8 +503,76 @@ footer {
     body {
         width: 100%;
     }
+    .button {
+        background-image: <i class="fas fa-search"></i>;
+}
+    #hebergement {
+        grid-template-areas: "main" 
+        "aside";
+        grid-template-columns: repeat(3,1fr);
+        width: 100%;
+    }
+    #popular h2 {
+        padding-top: 0;
+}
+   #popular {
+       display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+    #popular img {
+        width: 6rem;
+        max-height: auto;
+        min-width: 6rem;
+    }
+    #popular .popstars {
+    position: absolute;
+    padding-top: 0rem;
+}
+    #activity {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+    #activity #activite_port {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-height: 11rem;
+    max-width: auto;
+    padding-bottom: 3rem;
+}   
+    #activity #activite_fort {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-height: 11rem;
+    max-width: auto;
+    padding-bottom: 3rem;
+}
+    #activity #activite_frioul {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    min-height: 11rem;
+    padding-bottom: 3rem;
+}
+    #activity #activite_calanques {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-height: 11rem;
+    max-width: auto;
+    padding-bottom: 3rem;
+}
+    #activity #activite_dame {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    min-height: 11rem;
+    max-height: 11rem;
+    max-width: auto;
+    padding-bottom: 1rem;
+}
+    #activity #activite_parc {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    max-height: 11rem;
+    max-width: auto;
+    padding-bottom: 1rem;
 }
 
-
-
-
+}
