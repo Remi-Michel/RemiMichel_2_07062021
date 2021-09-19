@@ -375,7 +375,7 @@ footer {
         padding-left: 1rem;
     }
     header {
-        display: inline-block;
+        display: block;
     }
     h1 {
         font-size: 1.7rem;
@@ -391,25 +391,24 @@ footer {
         text-align: left;
         padding-left: 1rem;
     } 
-    /*nav {
-        width: 100%;
-        flex-basis: 100%;
-    }  */
     .link {
         position: relative;
         width: 50%;
+        border-bottom: solid 0.2rem transparent;
     }
     .link:hover  {
         color: #0065FC;
+        border-top: solid 0.2rem transparent;
         border-bottom: solid 0.2rem #0065FC;
-        border-top: hidden;
     }
     .signup {
-        position: relative;
-        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0rem;
+        border-top: solid 0.2rem transparent;
     }
     .signup:hover {
-        border-top: hidden;
+        border-top: solid 0.2rem transparent;
     }
     form {
         padding-left: 1rem;
@@ -508,9 +507,6 @@ footer {
 @media screen and (min-width:700px) and (max-width: 1024px) {
     body {
         width: 100%;
-    }
-    .signup {
-        float: right;
     }
     #hebergement {
         grid-template-areas: "main" 
