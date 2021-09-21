@@ -391,6 +391,9 @@ footer {
         text-align: left;
         padding-left: 1rem;
     } 
+    input {
+        width: 100%;
+    }
     .link {
         position: relative;
         width: 50%;
